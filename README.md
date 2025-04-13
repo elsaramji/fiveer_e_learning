@@ -1,16 +1,29 @@
-# fiveer_e_learning
+# 📚 E-Learning App (Flutter)
 
-A new Flutter project.
+A modern and fully responsive E-learning application built using **Flutter**.  
+The app provides a seamless learning experience with features like video courses, quizzes, progress tracking, and more.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+- 📺 Watch video lessons
+- 📝 Take quizzes and get instant feedback
+- 🔐 User authentication (Sign up / Sign in)
+- 🎯 Track learning progress
+- 💬 Comments / Discussions on lessons
+- 📱 Clean and responsive UI
+- 🌐 API integration for dynamic content
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Tech Stack
+
+- **Frontend:** Flutter (Dart)
+- **State Management:** Provider / Riverpod / Bloc *(under choose)*
+- **Backend:** Firebase Services
+- **Database:** Firestore / Supabase
+- **Authentication:** Firebase Auth
+- **UI Components:** Flutter Material Components
+
+---

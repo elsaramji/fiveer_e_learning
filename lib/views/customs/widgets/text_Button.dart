@@ -1,5 +1,5 @@
 import 'package:fiveer_e_learning/core/constants/colors.dart';
-import 'package:fiveer_e_learning/view/customs/styles/style.dart';
+import 'package:fiveer_e_learning/views/customs/styles/style.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextButton extends StatelessWidget {
@@ -33,7 +33,7 @@ class CustomTextButton extends StatelessWidget {
         ),
       ),
       child: AspectRatio(
-        aspectRatio: MediaQuery.of(context).size.width / 55,
+        aspectRatio: MediaQuery.of(context).size.width / 40,
         child: Center(
           child: Text(
             text,

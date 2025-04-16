@@ -1,10 +1,12 @@
+import 'package:fiveer_e_learning/components/Auth/views/home_auth_view.dart';
 import 'package:fiveer_e_learning/components/splash/view/customs/widgets/info_welcome_wid.dart'
     show InfoWelcome, welcomeList;
 import 'package:fiveer_e_learning/core/constants/colors.dart';
 import 'package:fiveer_e_learning/core/constants/diemainions.dart';
-import 'package:fiveer_e_learning/view/customs/styles/style.dart';
-import 'package:fiveer_e_learning/view/customs/widgets/screen_box.dart';
-import 'package:fiveer_e_learning/view/customs/widgets/text_Button.dart';
+import 'package:fiveer_e_learning/core/logic/get_navigetor/get_go_to.dart';
+import 'package:fiveer_e_learning/views/customs/styles/style.dart';
+import 'package:fiveer_e_learning/views/customs/widgets/screen_box.dart';
+import 'package:fiveer_e_learning/views/customs/widgets/text_Button.dart';
 import 'package:flutter/material.dart';
 
 class SplashView extends StatelessWidget {
@@ -57,12 +59,16 @@ class SplashView extends StatelessWidget {
                               children: [
                                 CustomTextButton(
                                   text: "Register",
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    GoToLogic.getGoTo(const HomeAuth());
+                                  },
                                 ),
                                 const SizedBox(height: 10),
                                 CustomTextButton(
                                   text: "Login",
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    GoToLogic.getGoTo(const HomeAuth());
+                                  },
                                   color: Colors.transparent,
                                 ),
                               ],

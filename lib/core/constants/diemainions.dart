@@ -7,4 +7,6 @@ class Diemainions {
   static const space6 = 24.0;
   static const space7 = 28.0;
   static const space8 = 32.0;
+  static const space16 = 64.0;
+  static const space32 = 128.0;
 }

@@ -18,6 +18,9 @@ class CustomTextButton extends StatelessWidget {
     return TextButton(
       onPressed: onPressed,
       style: ButtonStyle(
+        overlayColor: WidgetStatePropertyAll(
+          const Color.fromARGB(21, 255, 170, 139),
+        ),
         backgroundColor: WidgetStatePropertyAll(
           color ?? AppColors.primaryColor,
         ),

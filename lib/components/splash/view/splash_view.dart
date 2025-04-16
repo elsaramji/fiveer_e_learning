@@ -28,30 +28,50 @@ class SplashView extends StatelessWidget {
           ),
           Container(
             padding: EdgeInsets.symmetric(horizontal: Diemainions.space4),
-            child: Column(
-              children: [
-                Flexible(
-                  flex: 2,
-                  child: PageView.builder(
-                    itemCount: welcomeList.length,
-                    itemBuilder: (context, index) {
-                      return InfoWelcome(welcomeModel: welcomeList[index]);
-                    },
-                  ),
-                ),
-                Flexible(
-                  flex: 1,
-                  child: Column(
-                    children: [
-                      CustomTextButton(text: "Register", onPressed: () {}),
-                      const SizedBox(height: 10),
-                      CustomTextButton(
-                        text: "Login",
-                        onPressed: () {},
-                        color: Colors.transparent,
+            child: CustomScrollView(
+              physics: ScrollPhysics(parent: NeverScrollableScrollPhysics()),
+              slivers: [
+                SliverList(
+                  delegate: SliverChildListDelegate([
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height,
+                      child: Column(
+                        children: [
+                          SizedBox(
+                            height: MediaQuery.of(context).size.height * 0.2,
+                          ),
+                          Flexible(
+                            flex: 2,
+                            child: PageView.builder(
+                              itemCount: welcomeList.length,
+                              itemBuilder: (context, index) {
+                                return InfoWelcome(
+                                  welcomeModel: welcomeList[index],
+                                );
+                              },
+                            ),
+                          ),
+                          Flexible(
+                            flex: 1,
+                            child: Column(
+                              children: [
+                                CustomTextButton(
+                                  text: "Register",
+                                  onPressed: () {},
+                                ),
+                                const SizedBox(height: 10),
+                                CustomTextButton(
+                                  text: "Login",
+                                  onPressed: () {},
+                                  color: Colors.transparent,
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
+                    ),
+                  ]),
                 ),
               ],
             ),

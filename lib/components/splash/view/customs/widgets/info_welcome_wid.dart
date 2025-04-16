@@ -15,11 +15,10 @@ class InfoWelcome extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Image.asset(
-          welcomeModel.imagepath,
-          fit: BoxFit.contain,
-          height: 212,
-          width: 226,
+        AspectRatio(
+          aspectRatio:
+              (MediaQuery.of(context).size.width - Diemainions.space6) / 160,
+          child: Image.asset(welcomeModel.imagepath, fit: BoxFit.contain),
         ),
         SizedBox(height: Diemainions.space4),
         Container(

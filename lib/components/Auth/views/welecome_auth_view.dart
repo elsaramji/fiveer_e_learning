@@ -1,4 +1,6 @@
 import 'package:fiveer_e_learning/components/Auth/views/Customs/styles/button_styles.dart';
+import 'package:fiveer_e_learning/components/Auth/views/Customs/widgets/auth_or_dvider.dart';
+import 'package:fiveer_e_learning/components/Auth/views/Customs/widgets/header_auth_space.dart';
 import 'package:fiveer_e_learning/components/Auth/views/Customs/widgets/register_text.dart';
 import 'package:fiveer_e_learning/components/Auth/views/Customs/widgets/social_auth_button.dart';
 import 'package:fiveer_e_learning/components/Auth/views/Customs/widgets/welecom_auth_text.dart';
@@ -25,7 +27,7 @@ class WelcomeAuthView extends StatelessWidget {
         slivers: [
           SliverList(
             delegate: SliverChildListDelegate([
-              SizedBox(height: MediaQuery.of(context).size.height * 0.095),
+              HeaderAuthSpace(),
               WelcomeAuthText(),
     
               SizedBox(height: MediaQuery.of(context).size.height * 0.075),
@@ -48,14 +50,7 @@ class WelcomeAuthView extends StatelessWidget {
                 ),
               ),
               SizedBox(height: Diemainions.space4),
-              Center(
-                child: Text(
-                  "or",
-                  style: TextAppStyles.fontregular18.copyWith(
-                    color: AppColors.blackColor,
-                  ),
-                ),
-              ),
+              AuthORDvider(),
               SizedBox(height: Diemainions.space4),
               CustomTextFormFeild(
                 obscureText: false,
@@ -100,3 +95,4 @@ class WelcomeAuthView extends StatelessWidget {
     );
   }
 }
+

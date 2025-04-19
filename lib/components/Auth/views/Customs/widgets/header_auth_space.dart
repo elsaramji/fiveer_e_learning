@@ -1,3 +1,4 @@
+import 'package:fiveer_e_learning/core/logic/screen_sizer_helper.dart';
 import 'package:flutter/material.dart';
 
 class HeaderAuthSpace extends StatelessWidget {
@@ -5,6 +6,6 @@ class HeaderAuthSpace extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(height: MediaQuery.of(context).size.height * 0.095);
+    return SizedBox(height: context.screenHeight * 0.095);
   }
 }

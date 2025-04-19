@@ -1,5 +1,6 @@
 import 'package:fiveer_e_learning/core/constants/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomWidgetButton extends StatelessWidget {
   final Widget widget;
@@ -31,10 +32,7 @@ class CustomWidgetButton extends StatelessWidget {
               ),
             ),
           ),
-      child: AspectRatio(
-        aspectRatio: MediaQuery.of(context).size.width / 40,
-        child: widget,
-      ),
+      child: SizedBox(height: 65.h, child: widget),
     );
   }
 }

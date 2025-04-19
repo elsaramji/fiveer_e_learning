@@ -40,7 +40,7 @@ class CustomTextFormFeild extends StatelessWidget {
 
       decoration: InputDecoration(
         hintText: hintText,
-        suffixIcon: suffixIcon,
+        suffixIcon: obscureText ? Icon(Icons.remove_red_eye) : null,
         border: UnderlineInputBorder(
           borderSide: BorderSide(color: AppColors.primaryColor),
         ),

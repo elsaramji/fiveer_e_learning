@@ -1,12 +1,13 @@
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 class Diemainions {
-  static const space1 = 4.0;
-  static const space2 = 8.0;
-  static const space3 = 12.0;
-  static const space4 = 16.0;
-  static const space5 = 20.0;
-  static const space6 = 24.0;
-  static const space7 = 28.0;
-  static const space8 = 32.0;
-  static const space16 = 64.0;
-  static const space32 = 128.0;
+  static double space2 = 8.h;
+  static double space3 = 12.h;
+  static double space4 = 16.h;
+  static double space5 = 20.h;
+  static double space6 = 24.h;
+  static double space7 = 28.h;
+  static double space8 = 32.h;
+  static double space16 = 64.h;
+  static double space32 = 128.h;
 }

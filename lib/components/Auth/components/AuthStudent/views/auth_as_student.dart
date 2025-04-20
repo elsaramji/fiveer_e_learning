@@ -3,8 +3,8 @@ import 'package:fiveer_e_learning/components/Auth/components/AuthStudent/views/e
 import 'package:fiveer_e_learning/components/Auth/views/Customs/styles/button_styles.dart';
 import 'package:fiveer_e_learning/components/Auth/views/Customs/widgets/already_have_account.dart';
 import 'package:fiveer_e_learning/components/Auth/views/Customs/widgets/auth_or_dvider.dart';
-import 'package:fiveer_e_learning/components/Auth/views/Customs/widgets/header_auth_space.dart';
 import 'package:fiveer_e_learning/components/Auth/views/Customs/widgets/social_auth_button.dart';
+import 'package:fiveer_e_learning/core/constants/Spacing.dart';
 import 'package:fiveer_e_learning/core/constants/assets.dart';
 import 'package:fiveer_e_learning/core/constants/colors.dart';
 import 'package:fiveer_e_learning/core/constants/diemainions.dart';
@@ -29,9 +29,9 @@ class AuthAsStudent extends StatelessWidget {
         slivers: [
           SliverList(
             delegate: SliverChildListDelegate([
-              HeaderAuthSpace(),
+              Space60(),
               WelecomeSignUpStudentText(),
-              HeaderAuthSpace(),
+              Space60(),
               CustomWidgetButton(
                 style: AuthButtonStyles.socailauthbuttonstyle(),
                 onPressed: () {

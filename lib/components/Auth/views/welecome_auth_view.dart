@@ -4,6 +4,7 @@ import 'package:fiveer_e_learning/components/Auth/views/Customs/widgets/header_a
 import 'package:fiveer_e_learning/components/Auth/views/Customs/widgets/register_text.dart';
 import 'package:fiveer_e_learning/components/Auth/views/Customs/widgets/social_auth_button.dart';
 import 'package:fiveer_e_learning/components/Auth/views/Customs/widgets/welecom_auth_text.dart';
+import 'package:fiveer_e_learning/core/constants/Spacing.dart';
 import 'package:fiveer_e_learning/core/constants/assets.dart';
 import 'package:fiveer_e_learning/core/constants/colors.dart';
 import 'package:fiveer_e_learning/core/constants/diemainions.dart';
@@ -39,7 +40,7 @@ class WelcomeAuthView extends StatelessWidget {
                 imagepath: Assets.assetsImagesGoogleIcon,
               ),
             ),
-            SizedBox(height: Diemainions.space2),
+            Space10(),
             CustomWidgetButton(
               onPressed: () {},
               style: AuthButtonStyles.socailauthbuttonstyle(),
@@ -48,7 +49,7 @@ class WelcomeAuthView extends StatelessWidget {
                 imagepath: Assets.assetsImagesFacebookIcon,
               ),
             ),
-            SizedBox(height: Diemainions.space4),
+            Space20(),
             AuthORDvider(),
             SizedBox(height: Diemainions.space4),
             CustomTextFormFeild(

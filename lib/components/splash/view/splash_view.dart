@@ -9,6 +9,7 @@ import 'package:fiveer_e_learning/views/customs/styles/style.dart';
 import 'package:fiveer_e_learning/views/customs/widgets/screen_box.dart';
 import 'package:fiveer_e_learning/views/customs/widgets/text_Button.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SplashView extends StatelessWidget {
   const SplashView({super.key});
@@ -18,17 +19,6 @@ class SplashView extends StatelessWidget {
     return ScreenBox(
       body: Stack(
         children: [
-          Positioned(
-            top: Diemainions.space8,
-            right: Diemainions.space2,
-
-            child: Text(
-              "Skip",
-              style: TextAppStyles.fontregular14.copyWith(
-                color: AppColors.primaryColor,
-              ),
-            ),
-          ),
           CustomScrollView(
             physics: ScrollPhysics(
               parent:
@@ -85,6 +75,22 @@ class SplashView extends StatelessWidget {
                 ]),
               ),
             ],
+          ),
+          Positioned(
+            top: Diemainions.space8,
+            right: Diemainions.space2,
+
+            child: GestureDetector(
+              onTap: () {
+                Get.to(const HomeAuth());
+              },
+              child: Text(
+                "Skip",
+                style: TextAppStyles.fontregular14.copyWith(
+                  color: AppColors.primaryColor,
+                ),
+              ),
+            ),
           ),
         ],
       ),

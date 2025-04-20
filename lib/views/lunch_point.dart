@@ -10,10 +10,11 @@ class FiveerLunchPoint extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       theme: ThemeData(
+        fontFamily: 'Cairo',
         scaffoldBackgroundColor: AppColors.whiteColor,
         primaryColor: AppColors.primaryColor,
         indicatorColor: AppColors.primaryColor,
-        
+
         focusColor: AppColors.primaryColor,
       ),
       themeMode: ThemeMode.light,

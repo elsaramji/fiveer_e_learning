@@ -1,4 +1,6 @@
+import 'package:fiveer_e_learning/components/Auth/components/AuthStudent/views/active_student_account.dart';
 import 'package:fiveer_e_learning/components/Auth/views/Customs/widgets/header_auth_space.dart';
+import 'package:fiveer_e_learning/core/constants/Spacing.dart';
 import 'package:fiveer_e_learning/core/constants/colors.dart';
 import 'package:fiveer_e_learning/core/constants/diemainions.dart';
 import 'package:fiveer_e_learning/core/logic/screen_sizer_helper.dart';
@@ -7,6 +9,7 @@ import 'package:fiveer_e_learning/views/customs/widgets/screen_box.dart';
 import 'package:fiveer_e_learning/views/customs/widgets/text_Button.dart';
 import 'package:fiveer_e_learning/views/customs/widgets/text_form_feild.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class EnterStudentInfo extends StatelessWidget {
   const EnterStudentInfo({super.key});
@@ -45,10 +48,14 @@ class EnterStudentInfo extends StatelessWidget {
                       textInputAction: feild.textInputAction,
                     );
                   }),
-                  SizedBox(height: Diemainions.space32),
+                  Space120(),
 
-                  CustomTextButton(text: "Continue", onPressed: () {}),
-                  SizedBox(height: Diemainions.space32),
+                  CustomTextButton(
+                    text: "Continue",
+                    onPressed: () {
+                      Get.to(() => ActiveStudentAccount());
+                    },
+                  ),
                 ],
               ),
             ]),

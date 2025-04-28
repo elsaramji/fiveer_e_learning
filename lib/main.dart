@@ -1,4 +1,4 @@
-import 'package:fiveer_e_learning/views/lunch_point.dart';
+import 'package:fiveer_e_learning/features/main/lunch_point.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
